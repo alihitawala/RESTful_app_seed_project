@@ -40,7 +40,7 @@ angular.module('myApp.view1', ['ngRoute'])
           var id = item._id;
           var index = item._index;
           var score = item._score;
-          var price = item._source.price;
+          var price = parseInt(item._source.price);
           var title = item._source.title;
           var obj = {
             id:id,
